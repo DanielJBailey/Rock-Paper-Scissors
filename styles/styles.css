@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:800");
+@import url("https://fonts.googleapis.com/css?family=Nunito:600");
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background-color: #2d3436;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,127 +45,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-.game-wrapper .splash-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #fff;
-  z-index: 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2em;
-  -webkit-transition: 1s;
-  transition: 1s;
-  display: none;
-}
-
-.game-wrapper .splash-screen h1 {
-  font-size: 40px;
-  padding: 0 0 50px 0;
-  color: #2d3436;
-}
-
-.game-wrapper .splash-screen form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-}
-
-.game-wrapper .splash-screen form .splash-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.game-wrapper .splash-screen form .splash-input #name {
-  width: 100%;
-  height: 50px;
-  padding: 0 20px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  -webkit-box-shadow: 2px 2px 10px #bebebe;
-          box-shadow: 2px 2px 10px #bebebe;
-  border: none;
-  outline: none;
-  background-color: #f0efef;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #636e72;
-}
-
-.game-wrapper .splash-screen form .splash-input #name::-webkit-input-placeholder {
-  font-size: 18px;
-  color: #b5c2c7;
-}
-
-.game-wrapper .splash-screen form .splash-input #name:-ms-input-placeholder {
-  font-size: 18px;
-  color: #b5c2c7;
-}
-
-.game-wrapper .splash-screen form .splash-input #name::-ms-input-placeholder {
-  font-size: 18px;
-  color: #b5c2c7;
-}
-
-.game-wrapper .splash-screen form .splash-input #name::placeholder {
-  font-size: 18px;
-  color: #b5c2c7;
-}
-
-.game-wrapper .splash-screen form .splash-input .start-game {
-  background-color: #d63031;
-  -webkit-box-shadow: 2px 2px 10px #bebebe;
-          box-shadow: 2px 2px 10px #bebebe;
-  color: white;
-  height: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.game-wrapper .splash-screen form .splash-input .start-game:hover {
-  background-color: #dd5555;
-}
-
-@media (min-width: 768px) {
-  .game-wrapper .splash-screen form {
-    width: 400px;
-  }
 }
 
 .game-wrapper .user-choice-screen {
@@ -196,7 +76,6 @@ body {
 
 .game-wrapper .user-choice-screen h1 {
   margin: 0 0 50px;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .game-wrapper .user-choice-screen .user-option {
@@ -308,21 +187,12 @@ body {
 
 .game-wrapper .result-screen .results-container .user-result .user-result-image-container {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.2);
   padding: 30px;
   margin: 10px;
-  height: 284px;
+  height: 275px;
+  border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 0px;
-  border: 10px solid white;
-  -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
-  padding: 30px;
-  margin: 10px;
-  transition: 0.5s;
-  border-radius: 0px;
-  border: 10px solid white;
 }
 
 .game-wrapper .result-screen .results-container .user-result .user-result-image-container img {
@@ -331,9 +201,27 @@ body {
           animation: bounceUp 0.5s infinite;
 }
 
-.game-wrapper .result-screen .results-container .vs {
+.game-wrapper .result-screen .results-container .vs-container {
   margin: 0 100px;
-  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Nunito', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 101px;
+}
+
+.game-wrapper .result-screen .results-container .vs-container .scoreboard {
+  font-size: 48px;
 }
 
 .game-wrapper .result-screen .results-container .comp-result {
@@ -360,22 +248,37 @@ body {
 
 .game-wrapper .result-screen .results-container .comp-result .comp-result-image-container {
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 284px;
   padding: 30px;
   margin: 10px;
+  height: 275px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 0px;
-  border: 10px solid white;
-  -webkit-box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
-          box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .game-wrapper .result-screen .results-container .comp-result .comp-result-image-container img {
   max-width: 300px;
   -webkit-animation: bounceUp 0.5s infinite;
           animation: bounceUp 0.5s infinite;
+}
+
+.game-wrapper .result-screen .play-again-container {
+  display: none;
+}
+
+.game-wrapper .result-screen .play-again-container .play-again {
+  padding: 15px 30px;
+  margin-top: 25px;
+  background-color: #00b894;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.game-wrapper .result-screen .play-again-container .play-again:hover {
+  background-color: #02d3a9;
 }
 
 @-webkit-keyframes bounceUp {

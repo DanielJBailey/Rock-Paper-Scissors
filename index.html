@@ -22,15 +22,6 @@
         </div>
     </div>
     <div class="game-wrapper">
-        <div class="splash-screen">
-            <h1>Welcome to Rock, Paper, Scissors!</h1>
-            <form class="start-game-form">
-                <div class="splash-input">
-                    <input type="text" placeholder="Enter your name:" id="name" required>
-                    <button type="submit" class="start-game">Start Game</button>
-                </div>
-            </form>
-        </div>
         <div class="user-choice-screen">
             <h1>Choose what you want to play as?</h1>
             <div class="user-option">
@@ -61,7 +52,11 @@
 
                         </div>
                     </div>
-                    <h1 class="vs">VS.</h1>
+                    <div class="vs-container">
+                        <h1 class = "scoreboard">
+                            0 - 0
+                        </h1>
+                    </div>
                     <div class="comp-result">
                         <h3 class="player-header">Computer</h3>
                         <div class="comp-result-image-container">
@@ -69,6 +64,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="play-again-container">
+                <button class="play-again">Play Again?</button>
             </div>
         </div>
         
