@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class = "hide">
+        <div class="comp-scissors">
+            <img src="img/compScissors.png" alt="comp-scissors">
+        </div>
+        <div class="comp-paper">
+            <img src="img/compPaper.png" alt="comp-paper">
+        </div>
+        <div class="comp-rock">
+            <img src="img/compRock.png" alt="comp-rock">
+        </div>
+    </div>
+    <div class="game-wrapper">
+        <div class="splash-screen">
+            <h1>Welcome to Rock, Paper, Scissors!</h1>
+            <form class="start-game-form">
+                <div class="splash-input">
+                    <input type="text" placeholder="Enter your name:" id="name" required>
+                    <button type="submit" class="start-game">Start Game</button>
+                </div>
+            </form>
+        </div>
+        <div class="user-choice-screen">
+            <h1>Choose what you want to play as?</h1>
+            <div class="user-option">
+                <div class="rock">
+                    <div class = "user-rock">
+                        <img src = "img/userRock.png" alt="user-rock"/>
+                    </div>
+                </div>
+                <div class="paper">
+                    <div class="user-paper">
+                        <img src = "img/userPaper.png" alt="user-paper"/>
+                    </div>
+                </div>
+                <div class="scissors">
+                    <div class="user-scissors">
+                        <img src="img/userScissors.png" alt="user-scissors">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "result-screen">
+            <h1 id = "winning-text">The result is...</h1>
+            <div class="choices-container">
+                <div class = "results-container">
+                    <div class="user-result">
+                        <h3 class="player-header">You</h3>
+                        <div class="user-result-image-container">
+
+                        </div>
+                    </div>
+                    <h1 class="vs">VS.</h1>
+                    <div class="comp-result">
+                        <h3 class="player-header">Computer</h3>
+                        <div class="comp-result-image-container">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
